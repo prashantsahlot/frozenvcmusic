@@ -17,7 +17,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ƨσʋяcɛ", url=f"https://github.com/prashantsahlot/frozenvcmusic"
+                        "buy code", url=f"https://t.me/FroZzeN_xD"
                     )
                 ]
             ]
