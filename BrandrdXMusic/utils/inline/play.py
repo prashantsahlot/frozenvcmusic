@@ -68,7 +68,7 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/FroZzeN_xD"
+                text="⛦ dev ❥", url=f"https://t.me/FroZzeN_xD"
             ),
             InlineKeyboardButton(
                 text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/Frozensupport1"
