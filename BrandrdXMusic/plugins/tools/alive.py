@@ -9,21 +9,21 @@ from config import MUSIC_BOT_NAME
 @app.on_message(filters.command(["alive"]))
 async def start(client: Client, message: Message):
     await message.reply_video(
-        video=f"https://graph.org/file/e999c40cb700e7c684b75.mp4",
+        video=f"https://files.catbox.moe/armi6r.mp4",
         caption=f"❤️ ʜᴇʏ {message.from_user.mention}\n\n🔮 ɪ ᴀᴍ {MUSIC_BOT_NAME}\n\n✨ ɪ ᴀᴍ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.\n\n💫 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴊᴏɪɴ ᴏᴜʀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ🤍...\n\n━━━━━━━━━━━━━━━━━━❄",
         reply_markup=InlineKeyboardMarkup(
             [
                [
             InlineKeyboardButton(
-                text="☆ Frozen 💗 ", url=f"https://t.me/FroZzeN_xD"
+                text="☆ Frozen ✨ ", url=f"https://t.me/vibeshift_bots"
             ),
             InlineKeyboardButton(
-                text="☆ ꜱᴜᴘᴘᴏʀᴛ 💗", url=f"https://t.me/Frozensupport1"
+                text="☆ ꜱᴜᴘᴘᴏʀᴛ 💕", url=f"https://t.me/Frozensupport1"
             ),
         ],
                 [
             InlineKeyboardButton(
-                text="☆ ᴄʜᴀɴɴᴇʟ💗", url=f"https://t.me/vibeshiftbots"
+                text="☆ ᴄʜᴀɴɴᴇʟ🆘", url=f"https://t.me/vibeshiftbots"
             ),
                 ],
                 [
