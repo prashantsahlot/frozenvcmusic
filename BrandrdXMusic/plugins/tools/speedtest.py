@@ -1,6 +1,6 @@
 import asyncio
 
-import speedtest
+from speedtest import Speedtest  # Ensure Speedtest is correctly imported
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -11,7 +11,7 @@ from BrandrdXMusic.utils.decorators.language import language
 
 def testspeed(m, _):
     try:
-        test = speedtest.Speedtest()
+        test = Speedtest()  # Fixed: Speedtest directly (not speedtest.Speedtest)
         test.get_best_server()
         m = m.edit_text(_["server_12"])
         test.download()
@@ -43,3 +43,4 @@ async def speedtest_function(client, message: Message, _):
     )
     msg = await message.reply_photo(photo=result["share"], caption=output)
     await m.delete()
+
