@@ -17,7 +17,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "buy code", url=f"https://t.me/FroZzeN_xD"
+                        "buy code", url=f"https://t.me/vibeshift_bots"
                     )
                 ]
             ]
