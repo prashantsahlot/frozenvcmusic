@@ -68,10 +68,10 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ dev ❥", url=f"https://t.me/vibeshift_bots"
+                text="✨ Updates ✨", url=f"https://t.me/vibeshiftbots"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/Frozensupport1"
+                text="💕 Support 💕", url=f"https://t.me/Frozensupport1"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="⛦ dev ❥", url=f"https://t.me/vibeshift_bots"
+                text="🌹 Updates 🌹", url=f"https://t.me/vibeshift_bots"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/Frozensupport1"
+                text="✨ Support ✨", url=f"https://t.me/Frozensupport1"
             ),
         ],
 
