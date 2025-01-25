@@ -39,7 +39,7 @@ unidecode
 https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
 git+https://github.com/AsmSafone/SafoneAPI
 bing_image_downloader
-Flask==2.3.3
+Flask==3.1.0
 Flask-RESTful==0.3.9
 
 
