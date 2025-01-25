@@ -2,6 +2,7 @@ import asyncio
 import os
 import re
 import json
+import resource
 from typing import Union
 
 import yt_dlp
@@ -12,12 +13,16 @@ from youtubesearchpython.__future__ import VideosSearch
 from BrandrdXMusic.utils.database import is_on_off
 from BrandrdXMusic.utils.formatters import time_to_seconds
 
-
-
-import os
 import glob
 import random
 import logging
+
+# Set memory limit (100MB)
+def set_memory_limit():
+    soft, hard = resource.getrlimit(resource.RLIMIT_AS)
+    resource.setrlimit(resource.RLIMIT_AS, (100 * 1024 * 1024, hard))
+
+set_memory_limit()
 
 def cookie_txt_file():
     folder_path = f"{os.getcwd()}/cookies"
@@ -29,8 +34,6 @@ def cookie_txt_file():
     with open(filename, 'a') as file:
         file.write(f'Choosen File : {cookie_txt_file}\n')
     return f"""cookies/{str(cookie_txt_file).split("/")[-1]}"""
-
-
 
 async def check_file_size(link):
     async def get_format_info(link):
@@ -80,7 +83,6 @@ async def shell_cmd(cmd):
         else:
             return errorz.decode("utf-8")
     return out.decode("utf-8")
-
 
 class YouTubeAPI:
     def __init__(self):
@@ -232,7 +234,7 @@ class YouTubeAPI:
         if videoid:
             link = self.base + link
         if "&" in link:
-            link = link.split("&")[0]
+            link is link.split("&")[0]
         ytdl_opts = {"quiet": True, "cookiefile" : cookie_txt_file()}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
